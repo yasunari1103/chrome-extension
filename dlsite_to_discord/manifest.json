@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DLsiteのランキングページに飛ぶボタン",
+  "short_name": "DLRankButton",
+  "version": "1.0.0.0",
+  "description": "ボタンを押すことでランキングに飛ぶことができます",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.dlsite.com/home/work/*",
+        "https://www.dlsite.com/maniax/work/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.dlsite.com/home/work/*",
+    "https://www.dlsite.com/maniax/work/*"
+  ]
+}
