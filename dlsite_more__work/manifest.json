@@ -1,22 +1,21 @@
 {
   "manifest_version": 3,
   "name": "より多くの作品を一度に見ることができる拡張機能",
-  "short_name": "DLManyWorks",
+  "short_name": "DLMoreWorks",
   "version": "1.0.0.0",
   "description": "ボタンを押すことでランキングに飛ぶことができます",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": [
-        "https://www.dlsite.com/home/work/*",
-        "https://www.dlsite.com/maniax/work/*"
+        "https://www.dlsite.com/home/fsr/*",
+        "https://www.dlsite.com/maniax/fsr/*"
       ],
-      "css": ["styles.css"],
       "js": ["content.js"]
     }
   ],
   "host_permissions": [
-    "https://www.dlsite.com/home/work/*",
-    "https://www.dlsite.com/maniax/work/*"
+    "https://www.dlsite.com/home/fsr/*",
+    "https://www.dlsite.com/maniax/fsr/*"
   ]
 }
