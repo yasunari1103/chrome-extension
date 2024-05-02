@@ -8,14 +8,16 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.dlsite.com/home/fsr/*",
-        "https://www.dlsite.com/maniax/fsr/*"
+        "https://www.dlsite.com/home/*",
+        "https://www.dlsite.com/maniax/*",
+        "https://www.dlsite.com/pro/campaign/*"
       ],
       "js": ["content.js"]
     }
   ],
   "host_permissions": [
-    "https://www.dlsite.com/home/fsr/*",
-    "https://www.dlsite.com/maniax/fsr/*"
+    "https://www.dlsite.com/home/*",
+    "https://www.dlsite.com/maniax/*",
+    "https://www.dlsite.com/pro/campaign/*"
   ]
 }
