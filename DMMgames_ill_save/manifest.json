@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "DMMGAMES画像保存君",
+  "short_name": "DIS",
+  "version": "1.0.0.0",
+  "description": "ボタンを押して映っている画像を保存してくれる拡張機能です",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://pc-play.games.dmm.co.jp/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
