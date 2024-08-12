@@ -10,8 +10,5 @@
       "matches": ["https://pc-play.games.dmm.co.jp/*"],
       "js": ["content.js"]
     }
-  ],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  ]
 }
