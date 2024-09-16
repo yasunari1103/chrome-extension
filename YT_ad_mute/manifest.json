@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "You Tube Ads mute",
+  "short_name": "YTAds mute",
+  "version": "1.0.0.0",
+  "description": "youtubeの広告を自動でミュートにしてくれる拡張機能",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
