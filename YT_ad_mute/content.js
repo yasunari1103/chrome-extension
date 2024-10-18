@@ -9,16 +9,16 @@ function main() {
       const muteButton = document.getElementsByClassName(
         "ytp-mute-button ytp-button"
       )[0];
-      if (muteButton) {
+      if (muteButton.title) {
         //広告ある
         if (ads.length > 0) {
-          if (muteButton.title !== "ミュート解除（m）") {
+          if (muteButton.title === "ミュート（消音）（m）") {
             muteButton.click();
           }
         }
         //広告ない
         else if (ads.length === 0) {
-          if (muteButton.title === "ミュート解除（m）") {
+          if (muteButton.title !== "ミュート（消音）（m）") {
             muteButton.click();
           }
         }
