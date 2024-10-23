@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "TwitterVSspam",
+    "short_name": "TVS",
+    "version": "1.0.0.0",
+    "description": "スパムらしきアカウントのみを表示できる拡張機能",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://x.com/*/followers"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
