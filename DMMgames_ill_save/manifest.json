@@ -5,6 +5,9 @@
   "version": "1.0.0.0",
   "description": "ボタンを押して映っている画像を保存してくれる拡張機能です",
   "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["https://pc-play.games.dmm.co.jp/*"],
